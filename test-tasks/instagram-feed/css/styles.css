@@ -1,0 +1,155 @@
+body {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.header {
+  padding: 5px;
+}
+.header__logo {
+  border: 1px solid #da291c;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.header__btn {
+  margin: 0 2px;
+}
+.header__btn__icon {
+  font-size: 14px;
+}
+.header__btn--lg {
+  flex-grow: 2;
+}
+.info {
+  margin-bottom: 25px;
+}
+@media only screen and (max-width:768px) {
+  .info {
+    margin: 25px 0;
+  }
+}
+.stats {
+  display: inline-block;
+}
+.stats__number {
+  font-weight: 600;
+}
+.stats__indicator {
+  color: #cccccc;
+}
+.stats__icon {
+  color: #3897f0;
+  font-size: 14px;
+}
+.followers {
+  justify-content: space-around;
+  list-style: none;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  white-space: nowrap;
+  width: 100%;
+}
+.followers__item {
+  display: inline-block;
+  padding: 0 5px;
+  text-align: center;
+  width: 15%;
+}
+@media only screen and (max-width:768px) {
+  .followers__item {
+    width: 25%;
+  }
+}
+.followers__separator {
+  background-color: #cccccc;
+  display: inline-block;
+  height: 30px;
+  margin: 0 20px;
+  position: relative;
+  top: -70px;
+  width: 1px;
+}
+@media only screen and (max-width:768px) {
+  .followers__separator {
+    top: -60px;
+  }
+}
+@media only screen and (max-width:560px) {
+  .followers__separator {
+    top: -50px;
+  }
+}
+.followers__img {
+  border-radius: 50%;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+.followers__title {
+  text-align: center;
+}
+.tabs-wrapper {
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.tabs-wrapper__item {
+  color: #3897f0;
+  display: block;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+}
+.tabs-wrapper__item--br {
+  border-right: 1px solid #cccccc;
+}
+.actions-wrapper {
+  margin-bottom: 20px;
+}
+.actions-wrapper__icon {
+  color: #cccccc;
+}
+.actions-wrapper__icon--active {
+  color: #3897f0;
+}
+.feed {
+  font-size: 0;
+  margin: 0 -2px;
+  padding: 0 2px;
+}
+.feed__tile {
+  display: inline-block;
+  padding: 2px;
+  position: relative;
+  width: calc(20%);
+}
+@media only screen and (max-width:768px) {
+  .feed__tile {
+    width: calc(25%);
+  }
+}
+@media only screen and (max-width:560px) {
+  .feed__tile {
+    width: calc(33.33333333%);
+  }
+}
+.feed__img {
+  height: 100%;
+  width: 100%;
+}
+.feed__icon {
+  color: #ffffff;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.flex-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+.text--grey {
+  color: #cccccc;
+}

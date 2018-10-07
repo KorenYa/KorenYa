@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Instagram feed</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <h2>Instagram layout</h2>
+    <!--Header-->
+    <div class="header">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <!--Stats-->
+                <div class="row">
+                    <div class="col-xs-3 col-sm-4">
+                        <img src="img/logo.jpg" alt="logo" class="header__logo img-responsive">
+                    </div>
+                    <div class="col-xs-9 col-sm-8">
+                        <div class="flex-wrapper">
+                            <div class="stats text-center">
+                                <div class="stats__number">8788</div>
+                                <div class="stats__indicator">posts</div>
+                            </div>
+                            <div class="stats text-center">
+                                <div class="stats__number">23.7m</div>
+                                <div class="stats__indicator">followers</div>
+                            </div>
+                            <div class="stats text-center">
+                                <div class="stats__number">94</div>
+                                <div class="stats__indicator">following</div>
+                            </div>
+                        </div>
+                        <div class="flex-wrapper">
+                            <a class="btn btn-default header__btn header__btn--lg" href="#" role="button">
+                                Message
+                            </a>
+                            <a class="btn btn-default header__btn" href="#" role="button">
+                                <i class="material-icons header__btn__icon">done</i>
+                                <i class="material-icons header__btn__icon">face</i>
+                            </a>
+                            <a class="btn btn-default header__btn" href="#" role="button">
+                                <i class="material-icons header__btn__icon">arrow_drop_down</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/Stats-->
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <!--Info-->
+                <div class="info">
+                    <div class="stats">
+                        <div class="stats__number">Manchester United <span class="stats__icon material-icons">verified_user</span></div>
+                        <div class="stats__indicator">Sports team</div>
+                    </div>
+                    <div class="header__text">
+                        <p>Follow our <a href="#">#Treble99</a> journey on <a href="#">#MUTV</a>: <br>
+                            <a href="#">manutd.co/KOV</a>
+                        </p>
+                        <p><a href="https://goo.gl/maps/FjaH1mEkJEy">Old Trafford, Manchester, United Kingdom M16 0RA</a></p>
+                        <p><span class="text--grey">Followed by</span> <b>fellaini</b>, <b>other</b>, <b>another</b> <b>+
+                                29
+                                more</b></p>
+                    </div>
+                </div>
+                <!--/Info-->
+            </div>
+        </div>
+
+        <!--Followers-->
+        <ul class="followers">
+            <li class="followers__item">
+                <img src="img/follower.jpg" alt="follower" class="followers__img">
+                <h5 class="followers__title">IGTV</h5>
+            </li>
+            <li class="followers__separator"></li>
+            <li class="followers__item">
+                <img src="img/follower.jpg" alt="follower" class="followers__img">
+                <h5 class="followers__title">MUTV</h5>
+            </li>
+            <li class="followers__item">
+                <img src="img/follower.jpg" alt="follower" class="followers__img">
+                <h5 class="followers__title">#MUWom</h5>
+            </li>
+            <li class="followers__item">
+                <img src="img/follower.jpg" alt="follower" class="followers__img">
+                <h5 class="followers__title">#BemWin</h5>
+            </li>
+            <li class="followers__item">
+                <img src="img/follower.jpg" alt="follower" class="followers__img">
+                <h5 class="followers__title">PL2018</h5>
+            </li>
+            <li class="followers__item">
+                <img src="img/follower.jpg" alt="follower" class="followers__img">
+                <h5 class="followers__title">Some</h5>
+            </li>
+            <li class="followers__item">
+                <img src="img/follower.jpg" alt="follower" class="followers__img">
+                <h5 class="followers__title">Thing</h5>
+            </li>
+        </ul>
+        <!--Followers-->
+    </div>
+    <!--/Header-->
+
+    <!--Tabs-->
+    <div class="row tabs-wrapper">
+        <div class="col-xs-6 text-center">
+            <a href="#" class="tabs-wrapper__item tabs-wrapper__item--br">Shop</a>
+        </div>
+        <div class="col-xs-6 text-center">
+            <a href="#" class="tabs-wrapper__item">Directions</a>
+        </div>
+    </div>
+    <!--Tabs-->
+
+    <!--Actions-->
+    <div class="row actions-wrapper">
+        <div class="col-xs-4 text-center">
+            <a href="#" class="material-icons actions-wrapper__icon actions-wrapper__icon--active">grid_on</a>
+        </div>
+        <div class="col-xs-4 text-center">
+            <a href="#" class="material-icons actions-wrapper__icon">contacts</span></a>
+        </div>
+        <div class="col-xs-4 text-center">
+            <a href="#" class="material-icons actions-wrapper__icon">assignment_ind</span></a>
+        </div>
+    </div>
+    <!--Actions-->
+
+
+    <!--Feed-->
+    <div class="feed">
+        <a href="#" class="feed__tile">
+            <img src="img/feed1.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon"></span>
+        </a>
+        <a href="#" class="feed__tile">
+            <img src="img/feed2.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon material-icons">photo_camera</span>
+        </a>
+        <a href="#" class="feed__tile">
+            <img src="img/feed3.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon"></span>
+        </a>
+
+        <a href="#" class="feed__tile">
+            <img src="img/feed3.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon"></span>
+        </a>
+        <a href="#" class="feed__tile">
+            <img src="img/feed2.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon material-icons">collections</span>
+        </a>
+        <a href="#" class="feed__tile">
+            <img src="img/feed1.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon material-icons">photo_camera</span>
+        </a>
+
+        <a href="#" class="feed__tile">
+            <img src="img/feed3.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon"></span>
+        </a>
+        <a href="#" class="feed__tile">
+            <img src="img/feed1.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon"></span>
+        </a>
+        <a href="#" class="feed__tile">
+            <img src="img/feed2.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon"></span>
+        </a>
+
+        <a href="#" class="feed__tile">
+            <img src="img/feed3.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon material-icons">photo_camera</span>
+        </a>
+        <a href="#" class="feed__tile">
+            <img src="img/feed2.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon"></span>
+        </a>
+        <a href="#" class="feed__tile">
+            <img src="img/feed1.jpg" alt="feed img" class="feed__img">
+            <span class="feed__icon material-icons">collections</span>
+        </a>
+    </div>
+    <!--/Feed-->
 </body>
+
 </html>
